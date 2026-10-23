@@ -1,0 +1,174 @@
+* {
+    color: white;
+}
+
+body {
+    background-color: #0B1F3A;
+}
+
+.hero-img {
+    max-height: 600px;
+    object-fit: contain;
+}
+
+.texto-especial {
+    color: #C9A227;
+}
+
+.texto-especial2 {
+    font-weight: 200;
+}
+
+.secao-depoimentos {
+    background-color: #061428;
+}
+
+.cartao-depoimento {
+    background-color: #172a46;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.texto-dourado {
+    color: #cda434 !important;
+    letter-spacing: 1px;
+}
+
+.rodape {
+    background-color: #031833;
+    border-top: 1px solid #172a46;
+}
+
+.rodape a {
+    transition: color 0.3s ease;
+}
+
+.rodape a:hover {
+    color: #cda434 !important;
+    /* Dourado */
+}
+
+.servicos {
+    background-color: #f7f7f5;
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding: 30px 0 40px;
+}
+
+.cabecalho-servicos {
+    margin-bottom: 40px;
+}
+
+.subtitulo {
+    color: #b89535;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cabecalho-servicos h1 {
+    color: #0b2240;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.cabecalho-servicos p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.servicos .row {
+    align-items: stretch;
+}
+
+.card-servico {
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card-servico img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.conteudo-card {
+    padding: 12px 10px;
+    background-color: #ffffff;
+}
+
+.conteudo-card h2 {
+    color: #0b2240;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.conteudo-card p {
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.icone-servico {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #f2e5b6;
+    color: #c9a227;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.icone-servico i {
+    display: inline-block;
+    color: #c9a227;
+    line-height: 1;
+}
+
+.faixa-contato {
+    background-color: #d0a91e;
+    min-height: 100px;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+}
+
+.faixa-contato p {
+    color: #081629;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.btn-contato {
+    background-color: #081629;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 9px 18px;
+    border-radius: 3px;
+}
+
+.btn-contato:hover {
+    background-color: #12345a;
+    color: #ffffff;
+}
