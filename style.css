@@ -231,3 +231,166 @@ textarea.campo {
     font-size: 0.65rem;
     margin: 24px 0 0 20px;
 }
+
+/* ===== Página Nossa Equipe — cole no FINAL do style.css ===== */
+
+.equipe {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Cada advogado: faixa escura (nome) + faixa clara (texto) + foto sobre as duas */
+.perfil {
+    position: relative;
+    background-color: #142847;
+}
+
+.perfil-topo {
+    position: relative;
+    background-color: #0B1F3A;
+    padding: 28px 20px 12px;
+}
+
+.perfil-nome {
+    color: #C9A227;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.perfil-cargo {
+    color: #C9A227;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    max-width: 280px;
+    margin: 0 0 14px 22px;
+}
+
+.perfil-oab {
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.perfil-corpo {
+    background-color: #142847;
+    padding: 20px;
+}
+
+.perfil-corpo p {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 18px;
+}
+
+.perfil-corpo p:last-child {
+    margin-bottom: 0;
+}
+
+.perfil-foto {
+    display: block;
+    height: 260px;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+/* Destaque final */
+.equipe-destaque {
+    background-color: #0B1F3A;
+    padding: 40px 20px 70px;
+}
+
+.equipe-destaque h2 {
+    color: #C9A227;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.25;
+    max-width: 400px;
+    margin: 0 0 30px;
+}
+
+.equipe-destaque ul {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding-left: 18px;
+    margin: 0;
+}
+
+.equipe-destaque li {
+    margin-bottom: 16px;
+}
+
+/* ===== Desktop: layout igual à imagem ===== */
+@media (min-width: 768px) {
+
+    .perfil-topo {
+        min-height: 125px;
+        padding: 28px 0 0;
+    }
+
+    .perfil-corpo {
+        min-height: 165px;
+        padding: 20px 0 25px;
+    }
+
+    .perfil-foto {
+        position: absolute;
+        bottom: 0;
+        height: 250px;
+        margin: 0;
+    }
+
+    .perfil-oab {
+        position: absolute;
+        bottom: 2px;
+    }
+
+    /* Wesley: foto à direita */
+    .perfil-foto-direita .perfil-topo {
+        padding-left: 9%;
+    }
+
+    .perfil-foto-direita .perfil-corpo {
+        padding-left: 6.5%;
+        padding-right: 32%;
+    }
+
+    .perfil-foto-direita .perfil-foto {
+        right: 3%;
+    }
+
+    .perfil-foto-direita .perfil-oab {
+        right: 26%;
+    }
+
+    /* Leandro: foto à esquerda */
+    .perfil-foto-esquerda .perfil-topo {
+        min-height: 137px;
+        padding-left: 50%;
+    }
+
+    .perfil-foto-esquerda .perfil-corpo {
+        min-height: 243px;
+        padding-left: 38%;
+        padding-right: 2%;
+    }
+
+    .perfil-foto-esquerda .perfil-foto {
+        left: 1.5%;
+    }
+
+    .perfil-foto-esquerda .perfil-oab {
+        left: 38%;
+    }
+
+    .perfil-foto-esquerda .perfil-cargo {
+        margin-left: 10px;
+    }
+
+    .equipe-destaque {
+        padding: 20px 20px 70px 46%;
+    }
+}
