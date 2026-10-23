@@ -172,3 +172,62 @@ body {
     background-color: #12345a;
     color: #ffffff;
 }
+
+.contato-form {
+    background-color: #142847;
+    padding: 30px 0 20px;
+    position: relative;
+}
+
+.form-contato {
+    max-width: 540px;
+}
+
+.form-contato .form-label {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.campo {
+    background-color: #263a59;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    min-height: 44px;
+}
+
+.campo:focus {
+    background-color: #34436f;
+    color: #fff;
+    box-shadow: 0 0 0 2px #C9A800;
+}
+
+textarea.campo {
+    min-height: 58px;
+    resize: vertical;
+}
+
+.btn-enviar {
+    background-color: #C9A800;
+    color: #fff;
+    font-weight: 600;
+    min-width: 220px;
+    padding: 12px 40px;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-enviar span {
+    color: #0b1a3a;
+}
+
+.btn-enviar:hover {
+    background-color: #dbb800;
+    color: #fff;
+}
+
+.obrigatorio {
+    display: block;
+    font-size: 0.65rem;
+    margin: 24px 0 0 20px;
+}

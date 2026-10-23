@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Garagem Online</title>
+  <title>Conecta Advocacia</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -33,7 +35,7 @@
             <a class="nav-link" href="teste-Agenda.html">teste-Agenda</a>
           </li>
           <li class="nav-item">
-            <a class="btn px-4 py-2 text-white fw-semibold" href="#"
+            <a class="btn px-4 py-2 text-white fw-semibold" href="#.html"
               style="background-color: #0b2240; border-radius: 4px;">Fale Conosco</a>
           </li>
         </ul>
@@ -41,69 +43,96 @@
     </div>
   </nav>
 
-  <div class="Meio">
-    <div class="En-tête">
-      <h3>Vamos conversar</h3>
-      <h1>Solicite um contato</h1>
+
+   <br>
+  <section class="contato-topo text-center">
+    <h4 class="texto-dourado fw-bold mb-1">Vamos conversar</h4>
+    <h2 class="fw-bold">Solicite um contato</h2>
+  </section>
+  <br>
+
+
+  <section class="contato-form">
+    <div class="container">
+      <form class="form-contato mx-auto">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <label for="nome" class="form-label">Nome completo* :</label>
+            <input type="text" class="form-control campo" id="nome" required>
+          </div>
+          <div class="col-md-6">
+            <label for="empresa" class="form-label">Empresa :</label>
+            <input type="text" class="form-control campo" id="empresa">
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email* :</label>
+            <input type="email" class="form-control campo" id="email" required>
+          </div>
+          <div class="col-md-6">
+            <label for="telefone" class="form-label">Telefone*:</label>
+            <input type="tel" class="form-control campo" id="telefone" required>
+          </div>
+          <div class="col-12">
+            <label for="mensagem" class="form-label">Como podemos ajudar?* :</label>
+            <textarea class="form-control campo" id="mensagem" rows="3" required></textarea>
+          </div>
+          <div class="col-12 text-center mt-4">
+            <button type="submit" class="btn btn-enviar">
+              Solicitar contato <span class="ms-3">&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
-    <div classe="inform">
-      <h5>Nome completo* :</h5>
-      <h5>E-mail* :</h5>
-      <h5>Telefone* :</h5>
-      <h5>Empresa :</h5>
-      <h5>Como podemos te ajudar :</h5>
-    </div>
-    <button type="button">Solicitar contato</button>
-  </div>
+    <small class="obrigatorio">* Obrigatório</small>
+  </section>
+
+
   <footer class="rodape py-5">
     <div class="container">
       <div class="row g-4 text-start">
-
         <div class="col-md-3">
-          <h5 class="text-white fw-bold mb-3">Conecta Advocacia</h5>
+          <h5 class="fw-bold mb-3">Conecta Advocacia</h5>
           <p class="text-white-50 mb-0">Advocacia especializada,<br>atendimento humano.</p>
         </div>
-
-        <div class="col-md-3">
-          <h5 class="text-white fw-bold mb-3">Escritório</h5>
+        <div class="col-md-2">
+          <h5 class="fw-bold mb-3">Escritório</h5>
           <ul class="list-unstyled">
             <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Início</a></li>
             <li class="mb-2"><a href="Sobre.html" class="text-white-50 text-decoration-none">Sobre</a></li>
             <li class="mb-2"><a href="Nossa_Equipe.html" class="text-white-50 text-decoration-none">Advogados</a></li>
           </ul>
         </div>
-
-        <div class="col-md-3">
-          <h5 class="text-white fw-bold mb-3">Áreas</h5>
+        <div class="col-md-2">
+          <h5 class="fw-bold mb-3">Áreas</h5>
           <ul class="list-unstyled">
             <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Cível</a></li>
             <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Empresarial</a></li>
             <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Trabalhista</a></li>
           </ul>
         </div>
-
-        <div class="col-md-3">
-          <h5 class="text-white fw-bold mb-3">Contato</h5>
+        <div class="col-md-5">
+          <h5 class="fw-bold mb-3">Contato</h5>
           <ul class="list-unstyled text-white-50">
             <li class="mb-2">(34) 3000-0000</li>
             <li class="mb-2">contato@vilelamendes.adv.br</li>
             <li class="mb-2">Patos de Minas, MG</li>
           </ul>
         </div>
-
       </div>
-
-      <div class="row mt-5 pt-3">
-        <div class="col-12 text-start">
+      <div class="row mt-4 pt-3">
+        <div class="col-12">
           <p class="text-white-50 mb-0" style="font-size: 0.75rem;">
-            &copy; 2026 Vilela & Mendes Advogados Associados. Todos os direitos reservados.
+            &copy; 2026 Vilela &amp; Mendes Advogados Associados. Todos os direitos reservados.
           </p>
         </div>
       </div>
     </div>
   </footer>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
