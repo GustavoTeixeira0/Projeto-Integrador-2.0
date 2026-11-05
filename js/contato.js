@@ -1,6 +1,6 @@
 // Cole aqui a URL do App da Web do Google Apps Script (termina em /exec).
 // Veja o passo a passo no README.md.
-const URL_API = 'COLE_AQUI_A_URL_DO_APPS_SCRIPT';
+const URL_API = 'https://script.google.com/macros/s/AKfycbzrYxVKmZaT2QFEzQnU2I1n_9wL3nS4lvMOPJ6UG3hkG9rcDCZoDBK1v3iNiMMnMyMpsQ/exec';
 
 const form = document.getElementById('form-contato');
 const botao = form.querySelector('button[type="submit"]');
@@ -41,4 +41,29 @@ form.addEventListener('submit', async (evento) => {
     botao.disabled = false;
     botao.innerHTML = textoOriginal;
   }
+});
+
+
+document.getElementById('telefone-cliente').addEventListener('input', function (e) {
+    // Remove tudo o que não for número
+    let valor = e.target.value.replace(/\D/g, "");
+    
+    // Limita o armazenamento a 11 dígitos numéricos
+    if (valor.length > 11) {
+        valor = valor.slice(0, 11);
+    }
+
+    // Aplica a máscara dinamicamente
+    if (valor.length > 0) {
+        valor = "(" + valor;
+        if (valor.length > 3) {
+            valor = valor.slice(0, 3) + ") " + valor.slice(3);
+        }
+        if (valor.length > 10) {
+            valor = valor.slice(0, 10) + "-" + valor.slice(10);
+        }
+    }
+    
+    // Atualiza apenas o valor deste input específico
+    e.target.value = valor;
 });
