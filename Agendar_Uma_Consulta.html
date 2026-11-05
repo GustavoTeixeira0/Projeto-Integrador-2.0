@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conecta Advocacia</title>
+  <title>Fale Conosco | Conecta Advocacia</title>
+  <meta name="description"
+    content="Solicite um contato com a Conecta Advocacia. Preencha o formulário e nossa equipe retorna para entender o seu caso.">
+  <link rel="icon" href="imagem/Logo.webp">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +18,7 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"> <img style="max-height: 75px;" src="imagem/Logo.png" alt=""> </a>
+      <a class="navbar-brand" href="index.html"> <img style="max-height: 75px;" src="imagem/Logo.webp" alt="Conecta Advocacia"> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,7 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-center gap-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+            <a class="nav-link" href="index.html">Início</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Nossos_Servicos.html">Nossos Serviços</a>
@@ -32,7 +35,7 @@
             <a class="nav-link" href="Nossa_Equipe.html">Nossa Equipe</a>
           </li>
           <li class="nav-item">
-            <a class="btn px-4 py-2 text-white fw-semibold" href="#.html"
+            <a class="btn px-4 py-2 text-white fw-semibold" aria-current="page" href="Agendar_Uma_Consulta.html"
               style="background-color: #0b2240; border-radius: 4px;">Fale Conosco</a>
           </li>
         </ul>
@@ -51,34 +54,38 @@
 
   <section class="contato-form">
     <div class="container">
-      <form class="form-contato mx-auto">
+      <form class="form-contato mx-auto" id="form-contato">
         <div class="row g-4">
           <div class="col-md-6">
             <label for="nome" class="form-label">Nome completo* :</label>
-            <input type="text" class="form-control campo" id="nome" required>
+            <input type="text" class="form-control campo" id="nome" name="nome" required>
           </div>
           <div class="col-md-6">
             <label for="empresa" class="form-label">Empresa :</label>
-            <input type="text" class="form-control campo" id="empresa">
+            <input type="text" class="form-control campo" id="empresa" name="empresa">
           </div>
           <div class="col-md-6">
             <label for="email" class="form-label">Email* :</label>
-            <input type="email" class="form-control campo" id="email" required>
+            <input type="email" class="form-control campo" id="email" name="email" required>
           </div>
           <div class="col-md-6">
             <label for="telefone" class="form-label">Telefone*:</label>
-            <input type="tel" class="form-control campo" id="telefone" required>
+            <input type="tel" class="form-control campo" id="telefone" name="telefone" required>
           </div>
           <div class="col-12">
             <label for="mensagem" class="form-label">Como podemos ajudar?* :</label>
-            <textarea class="form-control campo" id="mensagem" rows="3" required></textarea>
+            <textarea class="form-control campo" id="mensagem" name="mensagem" rows="3" required></textarea>
           </div>
+          <!-- Campo anti-robô: fica escondido para pessoas -->
+          <input type="text" name="site" tabindex="-1" autocomplete="off" aria-hidden="true"
+            style="position:absolute; left:-9999px;">
           <div class="col-12 text-center mt-4">
             <button type="submit" class="btn btn-enviar">
               Solicitar contato <span class="ms-3">&rarr;</span>
             </button>
           </div>
         </div>
+        <div id="aviso-contato" class="d-none" role="status" aria-live="polite"></div>
       </form>
     </div>
     <small class="obrigatorio">* Obrigatório</small>
@@ -96,31 +103,31 @@
           <h5 class="fw-bold mb-3">Escritório</h5>
           <ul class="list-unstyled">
             <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Início</a></li>
-            <li class="mb-2"><a href="Sobre.html" class="text-white-50 text-decoration-none">Sobre</a></li>
+            <li class="mb-2"><a href="Nossos_Servicos.html" class="text-white-50 text-decoration-none">Serviços</a></li>
             <li class="mb-2"><a href="Nossa_Equipe.html" class="text-white-50 text-decoration-none">Advogados</a></li>
           </ul>
         </div>
         <div class="col-md-2">
           <h5 class="fw-bold mb-3">Áreas</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Cível</a></li>
-            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Empresarial</a></li>
-            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Trabalhista</a></li>
+            <li class="mb-2"><a href="Nossos_Servicos.html" class="text-white-50 text-decoration-none">Cível</a></li>
+            <li class="mb-2"><a href="Nossos_Servicos.html" class="text-white-50 text-decoration-none">Empresarial</a></li>
+            <li class="mb-2"><a href="Nossos_Servicos.html" class="text-white-50 text-decoration-none">Trabalhista</a></li>
           </ul>
         </div>
         <div class="col-md-5">
           <h5 class="fw-bold mb-3">Contato</h5>
           <ul class="list-unstyled text-white-50">
-            <li class="mb-2">(34) 3000-0000</li>
-            <li class="mb-2">contato@vilelamendes.adv.br</li>
-            <li class="mb-2">Patos de Minas, MG</li>
+            <li class="mb-2"><a href="tel:+5531995634814" class="text-white-50 text-decoration-none">(31) 99563-4814</a></li>
+            <li class="mb-2"><a href="mailto:wesleyafonsooliveira@gmail.com" class="text-white-50 text-decoration-none">wesleyafonsooliveira@gmail.com</a></li>
+            <li class="mb-2">Belo Horizonte, MG</li>
           </ul>
         </div>
       </div>
       <div class="row mt-4 pt-3">
         <div class="col-12">
           <p class="text-white-50 mb-0" style="font-size: 0.75rem;">
-            &copy; 2026 Vilela &amp; Mendes Advogados Associados. Todos os direitos reservados.
+            &copy; 2026 Conecta Advocacia. Todos os direitos reservados.
           </p>
         </div>
       </div>
@@ -130,6 +137,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="js/contato.js"></script>
 </body>
 
 </html>
