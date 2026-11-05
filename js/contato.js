@@ -36,7 +36,7 @@ form.addEventListener('submit', async (evento) => {
     mostrarAviso('Recebemos sua mensagem! Entraremos em contato em breve.', 'success');
   } catch (erro) {
     console.error(erro);
-    mostrarAviso('Não foi possível enviar agora. Tente novamente ou ligue (34) 3000-0000.', 'danger');
+    mostrarAviso('Não foi possível enviar agora. Tente novamente ou ligue (31) 99563-4814.', 'danger');
   } finally {
     botao.disabled = false;
     botao.innerHTML = textoOriginal;
