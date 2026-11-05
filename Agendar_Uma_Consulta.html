@@ -32,7 +32,7 @@
             <a class="nav-link" href="Nossa_Equipe.html">Nossa Equipe</a>
           </li>
           <li class="nav-item">
-            <a class="btn px-4 py-2 text-white fw-semibold" href="#.html"
+            <a class="btn px-4 py-2 text-white fw-semibold" href="Agendar_Uma_Consulta.html"
               style="background-color: #0b2240; border-radius: 4px;">Fale Conosco</a>
           </li>
         </ul>
@@ -51,34 +51,38 @@
 
   <section class="contato-form">
     <div class="container">
-      <form class="form-contato mx-auto">
+      <form class="form-contato mx-auto" id="form-contato">
         <div class="row g-4">
           <div class="col-md-6">
             <label for="nome" class="form-label">Nome completo* :</label>
-            <input type="text" class="form-control campo" id="nome" required>
+            <input type="text" class="form-control campo" id="nome" name="nome" required>
           </div>
           <div class="col-md-6">
             <label for="empresa" class="form-label">Empresa :</label>
-            <input type="text" class="form-control campo" id="empresa">
+            <input type="text" class="form-control campo" id="empresa" name="empresa">
           </div>
           <div class="col-md-6">
             <label for="email" class="form-label">Email* :</label>
-            <input type="email" class="form-control campo" id="email" required>
+            <input type="email" class="form-control campo" id="email" name="email" required>
           </div>
           <div class="col-md-6">
             <label for="telefone" class="form-label">Telefone*:</label>
-            <input type="tel" class="form-control campo" id="telefone" required>
+            <input type="tel" class="form-control campo" id="telefone" name="telefone" required>
           </div>
           <div class="col-12">
             <label for="mensagem" class="form-label">Como podemos ajudar?* :</label>
-            <textarea class="form-control campo" id="mensagem" rows="3" required></textarea>
+            <textarea class="form-control campo" id="mensagem" name="mensagem" rows="3" required></textarea>
           </div>
+          <!-- Campo anti-robô: fica escondido para pessoas -->
+          <input type="text" name="site" tabindex="-1" autocomplete="off" aria-hidden="true"
+            style="position:absolute; left:-9999px;">
           <div class="col-12 text-center mt-4">
             <button type="submit" class="btn btn-enviar">
               Solicitar contato <span class="ms-3">&rarr;</span>
             </button>
           </div>
         </div>
+        <div id="aviso-contato" class="d-none" role="status" aria-live="polite"></div>
       </form>
     </div>
     <small class="obrigatorio">* Obrigatório</small>
@@ -130,6 +134,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="js/contato.js"></script>
 </body>
 
 </html>
